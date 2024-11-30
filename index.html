@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Smoothie Recipe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="recipe-card">
+        <h1>Chocolate Smoothie</h1>
+        <img src="chocolate-smoothie.jpg" alt="Chocolate Smoothie" class="recipe-image">
+
+        <div class="info">
+            <p><strong>Preparation Time:</strong> 10 minutes</p>
+            <p><strong>Serving Size:</strong> 2</p>
+        </div>
+
+        <button id="toggle-ingredients">Show Ingredients</button>
+        <ul id="ingredients-list" class="hidden">
+            <li>2 cups milk</li>
+            <li>2 tablespoons cocoa powder</li>
+            <li>1 banana</li>
+            <li>2 tablespoons peanut butter</li>
+            <li>1 tablespoon honey</li>
+            <li>Ice cubes (optional)</li>
+        </ul>
+
+        <button id="toggle-steps">Show Steps</button>
+        <ol id="steps-list" class="hidden">
+            <li>Place all ingredients into a blender.</li>
+            <li>Blend until smooth and creamy.</li>
+            <li>Pour into glasses and enjoy!</li>
+        </ol>
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <button id="start-cooking">Start Cooking</button>
+        <button id="next-step" class="hidden">Next Step</button>
+
+        <div class="timer hidden">
+            <p>Time Remaining: <span id="time-remaining">10:00</span></p>
+        </div>
+        <br/><button id="print-recipe">Print Recipe</button>
+    </div>
+
+    
+</body>
+</html>

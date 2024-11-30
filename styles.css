@@ -1,0 +1,118 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('8814513.jpg'); /* Correct way to add your background image */
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.recipe-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.recipe-image {
+    max-width: 40%;
+    border-radius: 10px;
+}
+
+.info {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #000000b7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.hidden {
+    display: none;
+}
+
+ul, ol {
+    text-align: left;
+    padding: 0;
+    list-style-position: inside;
+}
+
+li:hover {
+    color: #252428aa;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+/* Progress bar container */
+.progress-bar {
+    width: 100%; /* Ensure it fits within its parent container */
+    background-color: #f7f2f2;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 0;
+    overflow: hidden; /* Prevents the progress bar from overflowing */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+/* Actual progress indicator */
+#progress {
+    width: 0; /* Default width */
+    height: 10px;
+    background-color: #0b0b0d;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+
+/* Timer */
+.timer {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .recipe-card {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Print-friendly styles */
+@media print {
+    body {
+        background-color: rgb(29, 23, 23);
+    }
+
+    .recipe-card {
+        box-shadow: none;
+    }
+
+    button {
+        display: none;
+    }
+    
+}
